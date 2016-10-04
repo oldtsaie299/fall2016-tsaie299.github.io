@@ -1,0 +1,57 @@
+body { 
+    background-image: url(marble.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-bottom: 100px;
+    font-family: 'Unica One', serif;
+    font-size: 48px;
+    color: palevioletred;
+}
+
+.container {
+    background-color: palevioletred;
+    width: 20px;
+    height: 20px;
+    margin-bottom: 100px;
+    position: absolute;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+.box { 
+    width: 20px;
+    height: 20px;
+    background-color: palevioletred;
+    position: absolute;
+    top: 200px;
+    right: 200px;
+
+}    
+.box1 { 
+    background-color: lightslategrey;
+    top: 30px;
+    right: 30px;
+    z-index: 100;
+
+}    
+
+
+.box2 { 
+    background-color: lightslategrey;
+    top: 60px;
+    right: 60px;
+    z-index: 100;
+
+}    
+
+
+#hexagon {
+	width: 100px;
+	height: 55px;
+	background: red;
+	position: relative;
+}
+
+@font-face {
+    font-family: 'unica one', cursive; 
+}

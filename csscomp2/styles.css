@@ -1,0 +1,68 @@
+body {
+    background-image: url(silver.jpg);
+    background-repeat: no-repeat;
+    background-position: left top;
+    margin-bottom: 100px;
+    font-family: 'Unica One', serif;
+    font-size: 48px;
+    color: lightslategrey;
+}
+
+.hexagon {
+  position: relative;
+  width: 30px; 
+  height: 17.21px;
+  background-color: palevioletred;
+  margin: 86.60px 0;
+}
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.hexagon:before {
+  bottom: 100%;
+  border-bottom: 8.660px solid palevioletred;
+}
+
+.hexagon:after {
+  top: 100%;
+  width: 0;
+  border-top: 8.660px solid palevioletred;
+}
+
+.hexagon1 {
+  position: relative;
+  width: 30px; 
+  height: 17.21px;
+  background-color: palevioletred;
+  z-index: 100;
+  margin: 86.60px 0;
+}
+.hexagon1:before,
+.hexagon1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.hexagon1:before {
+  bottom: 100%;
+  border-bottom: 8.660px solid palevioletred;
+}
+
+.hexagon1:after {
+  top: 100%;
+  width: 0;
+  border-top: 8.660px solid palevioletred;
+}
+
+@font-face {
+    font-family: 'unica one', cursive; 
+}
