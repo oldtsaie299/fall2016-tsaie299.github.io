@@ -1,48 +1,71 @@
 body {
-    background-image: url(silver.jpg);
+    background-color: black;
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 100px;
     font-family: 'Unica One', serif;
     font-size: 48px;
-    color: lightslategrey;
-}
-
-.center {
-  width: 200px
-  margin: auto
-  margin-top: -50px
+    color: palevioletred;
 }
 
 .hexagon {
-  width: 200px
-  height: 400px
-  overflow: hidden
-  visibility: hidden
-  transform: rotate(120deg)
-  cursor: pointer
+  position: relative;
+  margin: 100px auto;
+  width: 190px;
+  height: 110px;
+  background-image: url("marble.jpg");
+  background-position: center center;
+  z-index: 1
+  line-height: 110px;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 6px;
+  color: #fff;
+  color: rgba(255,255,255,.5);
+  cursor: pointer;
+  transition: color 500ms ease, text-shadow 500ms ease;
+}
+.hexagon:hover {
+  color: #fff;
+  text-shadow: 0 0 10px white;
 }
 
-.hexagon-in1 {
-  overflow: hidden
-  width: 100%
-  height: 100%
-  transform: rotate(-60deg)
+.hexagon .face1,
+.hexagon .face2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: inherit;
+  z-index: -1;
+  /* Keeps borders smooth in webkit */
+  backface-visibility: hidden;
+}
+.hexagon .face1:before,
+.hexagon .face2:before {
+  content: '';
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  background: inherit;
 }
 
-.hexagon-in2 {
-  width: 100%
-  height: 100%
-  visibility: visible
-  transform: rotate(-60deg)  
-  background: url("marble.jpg")
-    repeat: no-repeat
-    position: 50%
+.hexagon .face1 { transform: rotate(60deg); }
+.hexagon .face1:before {
+  left: 0;
+  transform-origin: left top;
+  transform: rotate(-60deg) translate(-110px, 0);
 }
 
-.hexagon-in2:hover {
-  background: url("marble.jpg")
-
+.hexagon .face2 { transform: rotate(-60deg); }
+.hexagon .face2:before {
+  right: 0;
+  transform-origin: right top;
+  transform: rotate(60deg) translate(110px, 0);
 }
 
 div {
@@ -68,6 +91,27 @@ div:after {
   to{width:100%}
 }
 
+.button {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url(marble.jpg);
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    float: right;
+}
+
+.button:hover {
+    background-position: -200px 0;
+ 
+}
+
+.button:active {
+    background-position: -40px 0;
+}
+
 @font-face {
     font-family: 'unica one', cursive; 
 }
+
