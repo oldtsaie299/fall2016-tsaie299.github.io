@@ -1,0 +1,35 @@
+
+body {
+    background-image: url("marble.1.jpg");
+    background-repeat: repeat;
+
+}
+
+.mytext {
+    font-family: impact;
+    color: black;
+    font-size: 10px;
+    width: 150px;
+}
+.button {
+    background-color: midnightblue;
+    height: 300px;
+    width: 300px;
+    border-radius: 100%;
+    transition: all 2s;
+    font-family: Impact, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100px;
+    color: white;
+    text-align: center;
+}
+
+.button:hover {
+    width: 200px;
+    height: 200px;
+    background-color: silver;
+    line-height: 300px;
+    color: white;
+    text-align: left;
+}

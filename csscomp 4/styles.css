@@ -1,10 +1,11 @@
 body {
-    background-color: black;
+    background-color: white;
     background-repeat: no-repeat;
     background-position: left top;
     margin-bottom: 100px;
     font-family: 'Unica One', serif;
     font-size: 48px;
+    font-stretch: condensed;
     color: palevioletred;
 }
 
@@ -13,17 +14,12 @@ body {
   margin: 100px auto;
   width: 190px;
   height: 110px;
-  background-position: center center;
-  z-index: 1
-  line-height: 110px;
-  text-align: center;
-  font-family: sans-serif;
-  font-size: 15px;
-  font-weight: bold;
-  letter-spacing: 6px;
+  background-image: url("drake.jpg");
+  background-position: center;
+  z-index: 0;
   color: #fff;
   color: rgba(255,255,255,.5);
-  cursor: pointer;
+  cursor: crosshair;
   transition: color 500ms ease, text-shadow 500ms ease;
 }
 .hexagon:hover {
@@ -41,11 +37,10 @@ body {
   overflow: hidden;
   background: inherit;
   z-index: -1;
-  /* Keeps borders smooth in webkit */
   backface-visibility: hidden;
 }
-.hexagon .face1:before,
-.hexagon .face2:before {
+.face1:before,
+.face2:before {
   content: '';
   position: absolute;
   width: 220px;
@@ -53,8 +48,8 @@ body {
   background: inherit;
 }
 
-.hexagon .face1 { transform: rotate(60deg); }
-.hexagon .face1:before {
+.face1 { transform: rotate(60deg); }
+.face1:before {
   left: 0;
   transform-origin: left top;
   transform: rotate(-60deg) translate(-110px, 0);
@@ -72,7 +67,7 @@ div {
   color: lightslategry;
 }
 
-.myanimatedborder:after {
+div:after {
   display: block;
   position: absolute;
   left: 0;
@@ -84,17 +79,12 @@ div {
   transition: width 0.2s;
   animation: underline 10s .5s;
 }
-
-@keyframes underline {
-  from{width:0%} 
-  to{width:100%}
-}
-
+ 
 .button {
     display: block;
     width: 20px;
     height: 20px;
-    background-image: url(marble.jpg);
+    background-image: url(drake.jpg);
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -102,8 +92,12 @@ div {
 }
 
 .button:hover {
-    background-position: -200px 0;
- 
+    width: 200px;
+    height: 500px;
+    background-color: silver;
+    line-height: 300px;
+    color: white;
+    text-align: left;
 }
 
 .button:active {
