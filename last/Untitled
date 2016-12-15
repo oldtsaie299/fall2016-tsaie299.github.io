@@ -1,0 +1,20 @@
+//click counter to make  the circle bigger if you can catch it???
+var counter = 1;
+var counters = 1;
+
+$(document).ready(function () {
+    $("#circle").click(function () {
+        console.log("The current counter is " + counter);
+
+        var newHeight = $(this).height() + counter;
+        var newWidth = $(this).width() + counter;
+        var newOpacity = Number($(this).css("opacity")) + (counter / 100);
+
+        $(this).css("height", newHeight + 'px');
+        $(this).css("width", newWidth + 'px');
+        $(this).css("opacity", newOpacity.toString());
+
+        //Incrementing counter;
+        ++counter;
+ 
+}

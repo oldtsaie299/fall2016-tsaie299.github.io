@@ -2,10 +2,13 @@
   <head>
 <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" type="text/css">
-
+  <audio>
+        <source src="block.mp3"/>
+    </audio>
   </head>
   
   <body>
+     <script src="jquery-1.12.0.min.js"></script>
     <div>Composition</div>
     <div class="container">
     <div class="box box1"></div>
@@ -15,5 +18,10 @@
   
     
   </body>
+  
+   <script>
+   var audio = $("audio")[0];
+    audio.play();
+    </script>
   
 </html>

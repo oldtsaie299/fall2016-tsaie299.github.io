@@ -1,0 +1,15 @@
+body { 
+    font-size:0;
+    background-color: white
+}
+
+
+.container {
+    background-color: palevioletred;
+    width: 60px;
+    height: 60px;
+    margin-left: 500px;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    
+}

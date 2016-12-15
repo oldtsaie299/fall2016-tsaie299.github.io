@@ -4,8 +4,14 @@
       <meta name="viewport" content="width=device-width">
        <link href="styles.css" rel="stylesheet" type="text/css">
       <title>Welcome</title>
+      
+        <audio>
+        <source src="raven.mp3"/>
+    </audio>
+    
     </head>
     <body>
+        <script src="jquery-1.12.0.min.js"></script>
 		<div class="mytext">Once upon a midnight dreary, while I pondered, weak and weary, 
 Over many a quaint and curious volume of forgotten lore, 
 While I nodded, nearly napping, suddenly there came a tapping, 
@@ -23,4 +29,10 @@ For the rare and radiant maiden whom the angels name Lenore-
         </div>
 		<div class="button">Liz Tsai</div>
     </body>
+    
+     <script>
+   var audio = $("audio")[0];
+    audio.play();
+    </script>
+    
 </html>

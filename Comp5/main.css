@@ -1,0 +1,17 @@
+body {
+    background-color: lightcoral;
+    background-repeat: no-repeat;
+    margin-bottom: 100px;
+    font-family: 'Unica One', serif;
+    font-size: 48px;
+    color: palevioletred;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: lightcyan;
+    display: inline-block;
+    font-size: 20px;
+    position: absolute;
+}

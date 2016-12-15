@@ -1,5 +1,12 @@
 body {
-    background-image: url("6.png");
+    background-color: white;
     background-repeat: repeat;
     background-size: cover;
+}
+
+#6.png {
+    height: auto; 
+    width: auto; 
+    max-width: 10px; 
+    max-height: 10px;
 }
